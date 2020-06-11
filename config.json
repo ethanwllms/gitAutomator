@@ -1,0 +1,14 @@
+{
+  "Client": "RealWorld",
+  "Destination-Environment": "Test",
+  "Functions": {
+    "Function1": {
+      "URL": "https://github.com/ethanwllms/testUtil.git",
+      "Target-Function": "Whatchamacallit_dev"
+    },
+    "Function2": {
+      "URL": "https://github.com/ethanwllms/Build-GT2.git",
+      "Target-Function": "Whatchamacallit_dev"
+    }
+  }
+}
