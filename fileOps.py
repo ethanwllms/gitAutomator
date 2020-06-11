@@ -18,9 +18,6 @@ def createStringDict():
         function = 'Whatchamacallit'
         strings.update({"repo_dir": repo_dir, "new_branch": new_branch, "file_path": file_path, "file": file,
                         "Commit_MSG": Commit_MSG, "function": function, "Client-Info": configs})
-        new_function = strings["function"] + "_" + strings["Client-Info"]["Client"] + "_" + strings["Client-Info"][
-            "Destination-Environment"]
-        strings.update({"new_function": new_function})
         # print(strings)
     except:
         print("FAILED to produce value dictionary...")
