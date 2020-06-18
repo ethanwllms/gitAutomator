@@ -1,7 +1,7 @@
-import os, shutil, json
+import os, shutil, json,os.path
 from tempfile import mkstemp
 from shutil import move, copymode
-from os import fdopen, remove
+from os import fdopen, remove, path
 
 def createStringDict():
     try:
@@ -80,3 +80,12 @@ def gatherFunctions(strings):
     else:
         print("Function information has been separated...")
         return functions
+    
+def fileCheck(file_path):
+    if os.access(file_path, os.F_OK):
+        if os.access(file_path, os.W_OK):
+            print("File Exists at: %s and has write permissions." % file_path)
+        else:
+            print("File Exists at: %s but does not have write permissions." % file_path)
+    else:
+        print("File does not exist at given path ...")
